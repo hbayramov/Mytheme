@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <article class="post">
+<h1 style ="border-bottom:7px solid #B10DC9;"> Yazılar </h1>
 <?php
 
 if (have_posts()) :
