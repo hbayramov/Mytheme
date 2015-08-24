@@ -1,0 +1,80 @@
+/*
+Theme Name: LearningWordPress
+Author: LearnWebCode
+Author URI: http://www.youtube.com/user/LearnWebCode
+Version: 1.0
+*/
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	background-color: #FDF3E7;
+}
+
+a:link,
+a:visited {
+	color: #2A5DB0;
+}
+
+h4 {
+   margin:1;
+   font-size:120%;
+}
+
+p {
+	line-height: 1.65em;
+  font-family: ‘Times New Roman’, Times, serif;
+  font-size:125%;
+  margin:0;
+}
+
+/* General Layout */
+div.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.single {
+	margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+post {
+      top:15px;
+      position:relative;
+}
+
+article.post {
+     left:15%;
+     top:50px;
+     position:relative;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+.entry {
+    top:-10px;
+    position:relative;
+}
+
+/* Header */
+.site-header {
+  left:-23%;
+  text-decoration:none;
+  position:relative;
+}
+
+/* Footer */
+.site-footer {
+	margin-top: 30px;
+	border-top: 2px solid #999;
+}
