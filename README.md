@@ -1,0 +1,2 @@
+# Mytheme
+Wordpress Theme
