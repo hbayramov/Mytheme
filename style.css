@@ -12,7 +12,7 @@ body {
 
 a:link,
 a:visited {
-	color: #2A5DB0;
+	color: #B10DC9 ;
 }
 
 h4 {
@@ -27,53 +27,30 @@ p {
   margin:0;
 }
 
-/* General Layout */
-div.container {
-	max-width: 920px;
-	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.single {
-	margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-post {
-      top:15px;
-      position:relative;
-}
-
 article.post {
-     left:15%;
-     top:50px;
+     left:2%;
+     top:-55px;
      position:relative;
-}
+} 
 
 article.post:last-of-type {
 	border-bottom: none;
 }
 
-.entry {
+div.entry {
     top:-10px;
     position:relative;
 }
 
 /* Header */
 .site-header {
-  left:-23%;
+  left:2%;
   text-decoration:none;
   position:relative;
 }
 
-/* Footer */
-.site-footer {
-	margin-top: 30px;
-	border-top: 2px solid #999;
+div.extra_info {
+    left:40%;
+    top:-144px;
+    position:relative;
 }
