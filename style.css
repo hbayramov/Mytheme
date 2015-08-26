@@ -53,10 +53,20 @@ div.entry {
 }
 
 div.sidebar {
-     width:30%;
-     left:70%;
-     top:-350px;
-     position:relative;
-     list-style-type: none;
+     width:20%;
+     left:67%;
+     top:5%;
+     position:absolute;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+ 		.site-header {
+        top:40px;
+        position:relative;
+     }
+    div.post {
+         top:60px;
+         left:-1%;
+        position:relative;
+    }
+}
