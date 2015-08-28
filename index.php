@@ -1,8 +1,6 @@
-
-<div class="container">
-   <?php get_header(); ?>
-  
-  <div class="post">
+ <div class="container">  
+  	<?php get_header(); ?>
+   <div class="post">
     <p style ="display: inline-block; padding-right:300px;	border-bottom:1px solid #EEE; font-weight:bold; font-size:170%;"> Yazılar </p>
 <?php 
 
@@ -24,6 +22,6 @@ if (have_posts()) :
   </div>  
   <div class="sidebar">
        <p>	<?php dynamic_sidebar('sidebar1'); ?> </p>
+  </div>
 </div>
-  
-</div>
+

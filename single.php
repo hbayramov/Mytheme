@@ -1,31 +1,10 @@
 
 <html>
- 	<body> 
-		<div class="post">
-<?php
-
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
-	  
-      <h2 style="border-bottom:1px solid #EEE;"><?php the_title(); ?></h2>
-      <div class="content"> <?php the_content(); ?> </div>
-	
-   <?php endwhile;
-	
-	else :
-		echo '<p>No content found</p>';
-	
-	endif;
-
-?>
-			</div>
-  </body>
-</html>
-
-<style type="text/css">
+  <head>	
+    <style type="text/css">
   
   body {
-       font-family: 'Tangerine', serif;;
+       font-family: 'Tangerine', serif;
 	     font-size: 120%;
 	     background-color: #FFFAFA;
   }
@@ -43,5 +22,34 @@ if (have_posts()) :
   div.content {
     margin-top:30px;
   }
-  
-</style>
+ @media (max-width: 700px)  {
+        div.post {
+            width:100%;
+            margin: 0 auto;
+            padding:20px 0;
+        }
+  }
+		</style>  
+  </head>
+ 	<body> 
+		<div class="post">
+<?php
+
+if (have_posts()) :
+	while (have_posts()) : the_post(); ?>
+	  
+      <h2 style="border-bottom:1px solid #EEE;"><?php the_title(); ?></h2>
+      <div class="content"> <?php the_content(); ?> </div>
+      <?php comments_template(); ?>
+      
+   <?php endwhile;
+	
+	else :
+		echo '<p>No content found</p>';
+	
+	endif;
+
+?>
+			</div>
+  </body>
+</html>
