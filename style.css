@@ -4,10 +4,9 @@ Author: Myself
 Version: 1.0
 */
 
+
 body {
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	background-color: #FFFAFA;
+	 background-color: #FFFAFA;
 }
 
 a:link,
@@ -21,77 +20,108 @@ h4 {
 }
 
 p {
-	line-height: 1.65em;
-  font-family:  Arial,Helvetica Neue,sans-serif;
-  font-size:120%;
-  margin:0;
+	 color: #0000;
+   font-family:Arial, Helvetica;
+   font-size:16px;  
+   margin:3;
 }
 
 div.container {
 	width: 980px;
-	height:100%;
 	margin-left:auto;
   margin-right:auto;
 }
 
 div.post {
      width: 75%;
-     top:32%;
-     font: 13px/1.4; 
-     position:relative;
+     font: 13px/1.4;
+     margin-top:120px;
 }
 
 div.entry {
-    top:-10px;
-    position:relative;
+    margin-top:-10px;
 }
 
-div.sidebar {
-    min-width:250px;
-    left:65%;
-    top:35px;
-    position:absolute;
+div.twitter {
+    float:right;
+    margin-top:-73.5%;
 }
 
 .site-header {
-   top:5%;
-   position:absolute;
+   padding-top:25px;
+}
+
+.logo {
+   margin-top:-25px;
+   text-align:center;
+   margin-left:-5%;
+   line-height: 160px;
+   color: rgba(0,0,0,0.6);
+	 text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                0px -5px 35px rgba(255,255,255,0.3);
+   font:450% "Great Vibes";
+   border-bottom: 3px solid #EEE;
+}
+
+.descrp {
+     padding-top:-15px;
+}
+
+.image {
+   margin: -85px 0 0 310px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
  		.site-header {
-        top:30px;
-        position:absolute;
+        padding-top:30px;
      }
     div.post {
-         top:200px;
-        position:relative;
+         width: 75%;
+         top:12%;
+         font: 13px/1.4; 
+         position:relative;
     }
-       div.sidebar {
-        min-width:250px;
-        top:32px;
-     } 
+       div.twitter {
+         float:right;
+         margin-top:-70.5%;
+     }
+     .image {
+        margin-top:-85px;
+      }
+      .logo {
+     				margin-left:-6%;
+      }
+     @media screen and (max-width: 360px) {
+           .site-header {
+              margin-top:120px;
+          }
+           div.twitter {
+           float:left;
+           margin-left:1%;
+           padding-top:30px;
+        }
+     }
 }
 
-@media (max-width: 700px) {  
+@media screen and (max-width: 360px) {  
     div.container {
-         width:100%;
-         margin: 0 auto;
-         padding:20px 0;
+         width:auto;
+         float:none;
+         margin-right:0;
+         margin-top:30%;
     }
-    site.header {
-         float:left;
-         left:0;
-         top:0;
-     }
     div.post {
-          left:0;
-          padding: 10px;
-          margin-top:200px;
+          left:0%;
+          margin-top:530px;
+          position:static;
     }
-      div.sidebar {
-        min-width:250px;
-        left:1%;
-        top:190px;
+    div.twitter {
+        float:left;
+        margin-left:-1%;
+        margin-top:-1020px;
      } 
+     div.image {
+        display:none;
+     }
 }
+
