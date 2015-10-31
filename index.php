@@ -1,7 +1,8 @@
- <div class="container">  
+<div class="container">  
   	<?php get_header(); ?>
    <div class="post">
-    <p style ="display: inline-block; padding-right:300px;	border-bottom:1px solid #EEE; font-weight:bold; font-size:170%;"> Yazılar </p>
+     <?php dynamic_sidebar('sidebar3'); ?>
+    <p style ="display: inline-block; padding-right:300px;	border-bottom:3px solid #EEE; font-weight:bold; font-size:170%;"> Yazılar </p>
 <?php 
 
 if (have_posts()) :
@@ -20,8 +21,11 @@ if (have_posts()) :
 
 ?>
   </div>  
-  <div class="sidebar">
-       <p>	<?php dynamic_sidebar('sidebar1'); ?> </p>
-  </div>
+       <div class="twitter">
+          <a class="twitter-timeline"  href="https://twitter.com/huseyn_xan" data-widget-id="659029136413990912">Tweets by @huseyn_xan</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); </script>
+      </div>
+  
 </div>
+
 
