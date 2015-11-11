@@ -4,9 +4,18 @@ Author: Myself
 Version: 1.0
 */
 
+html {
+  padding:0;
+  margin: 0;
+  min-width:1300px;
+}
 
 body {
 	 background-color: #FFFAFA;
+   padding:0;
+   margin:0;
+   font-family: Arial, sans-serif;
+   font-size:16px;
 }
 
 a:link,
@@ -21,107 +30,149 @@ h4 {
 
 p {
 	 color: #0000;
-   font-family:Arial, Helvetica;
+   font-family: Arial, Helvetica;
    font-size:16px;  
    margin:3;
 }
 
 div.container {
-	width: 980px;
-	margin-left:auto;
-  margin-right:auto;
+	max-width: 980px;
+	margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-div.post {
-     width: 75%;
-     font: 13px/1.4;
-     margin-top:120px;
+.site-header h1 {
+   border-bottom: 3px solid #EEE;
+   margin-bottom: 20px;
+   text-align:center;
+   line-height: 160px;
+   color: rgba(0,0,0,0.6);
+	 text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                0px -5px 35px rgba(255,255,255,0.3);
+   font:450% "Great Vibes";
+}
+
+.site-header h1 {
+      margin:0;
+}
+
+.site-header h1 a:link,
+.site-header h1 a:visited {
+       text-decoration:none;    
+}
+
+.main-column {
+     width:25%;
+     float:left;
+     margin-left:16%;
+     margin-top:10%;
+}
+
+.twitter {
+    width:20%;
+    float:right;
+    margin-right:16%;
+    margin-top:-11%;
+}
+
+.clear {
+   clear:both; 
 }
 
 div.entry {
     margin-top:-10px;
 }
 
-div.twitter {
-    float:right;
-    margin-top:-73.5%;
-}
-
-.site-header {
-   padding-top:25px;
-}
-
-.logo {
-   margin-top:-25px;
-   text-align:center;
-   margin-left:-5%;
-   line-height: 160px;
-   color: rgba(0,0,0,0.6);
-	 text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                0px -5px 35px rgba(255,255,255,0.3);
-   font:450% "Great Vibes";
-   border-bottom: 3px solid #EEE;
-}
-
 .descrp {
-     padding-top:-15px;
+     margin-top:4%;
 }
 
 .image {
-   margin: -85px 0 0 310px;
+     margin-left: 36%;
+     margin-top: -14%;
+     display: inline-block;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
- 		.site-header {
-        padding-top:30px;
-     }
-    div.post {
-         width: 75%;
-         top:12%;
-         font: 13px/1.4; 
-         position:relative;
-    }
-       div.twitter {
-         float:right;
-         margin-top:-70.5%;
-     }
-     .image {
-        margin-top:-85px;
-      }
-      .logo {
-     				margin-left:-6%;
-      }
-     @media screen and (max-width: 360px) {
-           .site-header {
-              margin-top:120px;
-          }
-           div.twitter {
-           float:left;
-           margin-left:1%;
-           padding-top:30px;
-        }
-     }
-}
-
-@media screen and (max-width: 360px) {  
-    div.container {
+@media screen and (max-width: 460px) {
+    .container {
          width:auto;
-         float:none;
-         margin-right:0;
-         margin-top:30%;
+         margin:0; 
     }
-    div.post {
-          left:0%;
-          margin-top:530px;
-          position:static;
-    }
-    div.twitter {
+    .site-header {
         float:left;
-        margin-left:-1%;
-        margin-top:-1020px;
-     } 
-     div.image {
+        margin-left:-16%;
+        margin-top:16%;
+     }
+    .descrp {
+        float:left;
+        margin-left:-15%;
+        margin-top:2%;
+        clear:both;
+     }
+    .main-column {
+          float:left;
+          margin-left:1%;
+          margin-top:0;
+          clear:both;
+    } 
+    .twitter {
+        float:left;
+        margin-left:0.8%;
+        margin-top:4%;
+        clear:both;
+    }
+     .image {
         display:none;
      }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  
+  html {
+     padding:0;
+     margin: 0;
+     min-width:1300px;
+  }
+  .main-column {
+     width:25%;
+     float:left;
+     margin-left:12%;
+     margin-top:10%;
+  }
+
+   .twitter {
+    width:20%;
+    float:right;
+    margin-right:12%;
+    margin-top:-11%;
+   }
+
+  @media screen and (max-width:460px) {
+     
+     .main-column {
+         float:left;
+         margin-left:1%; 
+         margin-top:1%;
+         clear:both;
+      }
+     
+     .twitter {
+        float:left;
+        margin-top:3%;
+        clear:both;
+     }
+    
+     .site-header {
+        float:left;
+        margin-left:-9.5%;
+        margin-top:16%;
+        clear:both;
+     }
+    
+  }
+    
+}
+
+
 
